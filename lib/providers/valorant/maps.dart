@@ -21,7 +21,7 @@ class MapsProvider extends ChangeNotifier {
     //store the map in the selectedMap
 
     final map = _maps.firstWhere((d) => d.uuid == mapId);
-    print('Map: ${map.displayName}');
+
     _selectedMap.clear(); // Clear previous selection (optional)
     _selectedMap.add(map);
     notifyListeners();

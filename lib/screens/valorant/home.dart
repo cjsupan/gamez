@@ -24,9 +24,9 @@ final List<ListItem> listItems = [
     backgroundImage: 'assets/images/valorant/maps.jpg',
   ),
   const ListItem(
-      title: 'Buddies',
-      routeName: '/buddies', // Replace with actual route name
-      backgroundImage: 'assets/images/valorant/buddies.jpg'),
+      title: 'Weapons',
+      routeName: '/weapons', // Replace with actual route name
+      backgroundImage: 'assets/images/valorant/weapons.jpg'),
   // Add similar items for buddies and bundles with appropriate route names and colors
 ];
 
@@ -55,9 +55,11 @@ class _HomeState extends State<ValHome> {
               child: Stack(
                 children: [
                   Container(
+                    margin: const EdgeInsets.only(left: 5, right: 5),
                     width: double.infinity,
                     height: 100,
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
                         opacity: 0.5,
                         image: AssetImage(listItems[index].backgroundImage),

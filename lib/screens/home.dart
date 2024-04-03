@@ -54,14 +54,13 @@ class _HomeState extends State<Home> {
                       Container(
                         width: 170,
                         height: 100,
-                        decoration: BoxDecoration(
-                          image: const DecorationImage(
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
                             opacity: 0.8,
                             image: AssetImage(
                                 'assets/images/valorant/valorant_bg.jpg'), // Replace with your image path
                             fit: BoxFit.cover,
                           ),
-                          borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
                       // Content on top with opacity
@@ -70,6 +69,7 @@ class _HomeState extends State<Home> {
                         height: 100,
                         decoration: BoxDecoration(
                           color: Colors.black.withOpacity(0.5), // 50% opacity
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: const Center(
                           child: Text(
@@ -115,6 +115,7 @@ class _HomeState extends State<Home> {
                         height: 100,
                         decoration: BoxDecoration(
                           color: Colors.black.withOpacity(0.5), // 50% opacity
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: const Center(
                           child: Text(
